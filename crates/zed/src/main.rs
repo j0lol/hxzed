@@ -245,6 +245,7 @@ fn main() {
         search::init(cx);
         semantic_index::init(fs.clone(), http.clone(), languages.clone(), cx);
         vim::init(cx);
+        hx::init(cx);
         terminal_view::init(cx);
 
         journal::init(app_state.clone(), cx);

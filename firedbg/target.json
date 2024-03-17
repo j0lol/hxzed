@@ -1,0 +1,95 @@
+{
+  "binaries": [
+    {
+      "name": "cli",
+      "src_path": "/Users/j0/Projects/hxzed/crates/cli/src/main.rs",
+      "required_features": []
+    },
+    {
+      "name": "collab",
+      "src_path": "/Users/j0/Projects/hxzed/crates/collab/src/main.rs",
+      "required_features": []
+    },
+    {
+      "name": "seed",
+      "src_path": "/Users/j0/Projects/hxzed/crates/collab/src/bin/seed.rs",
+      "required_features": []
+    },
+    {
+      "name": "dotenv",
+      "src_path": "/Users/j0/Projects/hxzed/crates/collab/src/bin/dotenv.rs",
+      "required_features": []
+    },
+    {
+      "name": "extension_json_schemas",
+      "src_path": "/Users/j0/Projects/hxzed/crates/extension/src/extension_json_schemas.rs",
+      "required_features": []
+    },
+    {
+      "name": "storybook",
+      "src_path": "/Users/j0/Projects/hxzed/crates/storybook/src/storybook.rs",
+      "required_features": []
+    },
+    {
+      "name": "theme_importer",
+      "src_path": "/Users/j0/Projects/hxzed/crates/theme_importer/src/main.rs",
+      "required_features": []
+    },
+    {
+      "name": "xtask",
+      "src_path": "/Users/j0/Projects/hxzed/tooling/xtask/src/main.rs",
+      "required_features": []
+    },
+    {
+      "name": "Zed",
+      "src_path": "/Users/j0/Projects/hxzed/crates/zed/src/main.rs",
+      "required_features": []
+    }
+  ],
+  "examples": [
+    {
+      "name": "events",
+      "src_path": "/Users/j0/Projects/hxzed/crates/fsevent/examples/events.rs",
+      "required_features": []
+    },
+    {
+      "name": "hello_world",
+      "src_path": "/Users/j0/Projects/hxzed/crates/gpui/examples/hello_world.rs",
+      "required_features": []
+    },
+    {
+      "name": "image",
+      "src_path": "/Users/j0/Projects/hxzed/crates/gpui/examples/image/image.rs",
+      "required_features": []
+    },
+    {
+      "name": "set_menus",
+      "src_path": "/Users/j0/Projects/hxzed/crates/gpui/examples/set_menus.rs",
+      "required_features": []
+    },
+    {
+      "name": "ownership_post",
+      "src_path": "/Users/j0/Projects/hxzed/crates/gpui/examples/ownership_post.rs",
+      "required_features": []
+    },
+    {
+      "name": "test_app",
+      "src_path": "/Users/j0/Projects/hxzed/crates/live_kit_client/examples/test_app.rs",
+      "required_features": []
+    }
+  ],
+  "integration_tests": [
+    {
+      "package_name": "gpui",
+      "test": {
+        "name": "action_macros",
+        "src_path": "/Users/j0/Projects/hxzed/crates/gpui/tests/action_macros.rs",
+        "required_features": []
+      },
+      "test_cases": [
+        "test_action_macros"
+      ]
+    }
+  ],
+  "unit_tests": []
+}

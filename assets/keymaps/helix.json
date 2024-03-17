@@ -1,0 +1,8 @@
+[
+  {
+    "context": "Editor && HelixControl && !menu",
+    "bindings": {
+      "j": "vim::Down"
+    }
+  }
+]

@@ -12,6 +12,7 @@ use gpui::{
     actions, point, px, AppContext, AsyncAppContext, Context, FocusableView, PromptLevel,
     TitlebarOptions, View, ViewContext, VisualContext, WindowKind, WindowOptions,
 };
+use hx::HelixModeSetting;
 pub use only_instance::*;
 pub use open_listener::*;
 
@@ -588,6 +589,7 @@ pub fn handle_keymap_file_changes(
 ) {
     BaseKeymap::register(cx);
     VimModeSetting::register(cx);
+    HelixModeSetting::register(cx);
 
     let (base_keymap_tx, mut base_keymap_rx) = mpsc::unbounded();
     let mut old_base_keymap = *BaseKeymap::get_global(cx);
@@ -637,6 +639,9 @@ pub fn load_default_keymap(cx: &mut AppContext) {
     KeymapFile::load_asset(DEFAULT_KEYMAP_PATH, cx).unwrap();
     if VimModeSetting::get_global(cx).0 {
         KeymapFile::load_asset("keymaps/vim.json", cx).unwrap();
+    }
+    if HelixModeSetting::get_global(cx).0 {
+        KeymapFile::load_asset("keymaps/helix.json", cx).unwrap();
     }
 
     if let Some(asset_path) = BaseKeymap::get_global(cx).asset_path() {
